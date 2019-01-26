@@ -1,0 +1,109 @@
+@import "../../assets/style/_variables";
+
+.header_style {
+  background-color: $white-color;
+  box-shadow: 0 0 14px 1px $box-shadow-color;
+  height: 53.9px;
+  overflow: hidden;
+  .home_community {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li {
+      float: left;
+      a {
+        cursor: pointer;
+        display: block;
+        padding: 16px 16px;
+        color: $theme-primary-color;
+        text-decoration: none;
+        img{
+            width: 25px;
+            height: 25px;
+        }
+        &:hover {
+          background-color: $theme-primary-color;
+          color: $white-color;
+        }
+      }
+      
+    }
+  }
+  .login_signup {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    li {
+      float: right;
+      a {
+        cursor: pointer;
+        display: block;
+        padding: 16px 16px;
+        color: $theme-primary-color;
+        text-decoration: none;
+        &:hover {
+          background-color: $theme-primary-color;
+          color: $white-color;
+        }
+      }
+      span {
+        cursor: pointer;
+        display: block;
+        padding: 18.9px 19px;
+        position: absolute;
+        right: 50px;
+        color: $theme-primary-color;
+        text-decoration: none;
+        &:hover {
+          background-color: $theme-primary-color;
+          color: $white-color;
+        }
+      }
+      div {
+        cursor: pointer;
+        padding: 18.9px 19px;
+        color: $theme-primary-color;
+        text-decoration: none;
+        &:hover {
+          background-color: $theme-primary-color;
+          color: $white-color;
+        }
+        &.tooltip {
+          position: absolute;
+          right: 0px;
+          .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: $white-color;
+            color: $theme-primary-color;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: -32px;
+            left: -50%;
+            margin-left: -60px;
+            border: 1px solid $theme-primary-color
+          }
+          .tooltiptext::after {
+            content: "";
+            position: absolute;
+            bottom: 101%;
+            left: 50%;
+            margin-left: 44px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent transparent $theme-primary-color transparent;
+          }
+          &:hover {
+            .tooltiptext {
+              visibility: visible;
+            }
+          }
+        }
+      }
+    }
+  }
+}

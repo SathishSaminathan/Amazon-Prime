@@ -1,0 +1,123 @@
+.header_style {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 14px 1px #80808040;
+          box-shadow: 0 0 14px 1px #80808040;
+  height: 53.9px;
+  overflow: hidden;
+}
+
+.header_style .home_community {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header_style .home_community li {
+  float: left;
+}
+
+.header_style .home_community li a {
+  cursor: pointer;
+  display: block;
+  padding: 16px 16px;
+  color: #fc8019;
+  text-decoration: none;
+}
+
+.header_style .home_community li a img {
+  width: 25px;
+  height: 25px;
+}
+
+.header_style .home_community li a:hover {
+  background-color: #fc8019;
+  color: #ffffff;
+}
+
+.header_style .login_signup {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.header_style .login_signup li {
+  float: right;
+}
+
+.header_style .login_signup li a {
+  cursor: pointer;
+  display: block;
+  padding: 16px 16px;
+  color: #fc8019;
+  text-decoration: none;
+}
+
+.header_style .login_signup li a:hover {
+  background-color: #fc8019;
+  color: #ffffff;
+}
+
+.header_style .login_signup li span {
+  cursor: pointer;
+  display: block;
+  padding: 18.9px 19px;
+  position: absolute;
+  right: 50px;
+  color: #fc8019;
+  text-decoration: none;
+}
+
+.header_style .login_signup li span:hover {
+  background-color: #fc8019;
+  color: #ffffff;
+}
+
+.header_style .login_signup li div {
+  cursor: pointer;
+  padding: 18.9px 19px;
+  color: #fc8019;
+  text-decoration: none;
+}
+
+.header_style .login_signup li div:hover {
+  background-color: #fc8019;
+  color: #ffffff;
+}
+
+.header_style .login_signup li div.tooltip {
+  position: absolute;
+  right: 0px;
+}
+
+.header_style .login_signup li div.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #ffffff;
+  color: #fc8019;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: -32px;
+  left: -50%;
+  margin-left: -60px;
+  border: 1px solid #fc8019;
+}
+
+.header_style .login_signup li div.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 101%;
+  left: 50%;
+  margin-left: 44px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #fc8019 transparent;
+}
+
+.header_style .login_signup li div.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+/*# sourceMappingURL=Header.css.map */
